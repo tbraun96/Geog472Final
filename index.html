@@ -20,6 +20,15 @@
     <script src="https://unpkg.com/d3@5/dist/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
 
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
@@ -28,7 +37,7 @@
 <article id="webslides">
     <!-- the landing scene -->
     <section class="bg-black">
-        <video class="background-video dark" autoplay muted loop>
+        <video id="myVideo" autoplay muted loop>
             <source src="assets/view.mp4" type="video/mp4">
         </video>
         <div style="font-family: 'Playfair Display', serif;" class="wrap aligncenter">
